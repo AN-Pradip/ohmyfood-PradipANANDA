@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/typography.scss";
 
 /*LAYOUT*/
@@ -7,3 +8,7 @@
 @import "./layout/footer.scss";
 @import "./layout/divLayout.scss";
 @import "./layout/location.scss";
+@import "./layout/explore.scss";
+
+/*COMPONENTS*/
+@import "./components/buttons.scss";

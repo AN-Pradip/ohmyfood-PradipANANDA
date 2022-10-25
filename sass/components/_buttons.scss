@@ -1,0 +1,17 @@
+.purpleButton {
+    box-shadow: 0px 4px 10px 0px #00000040;
+
+    background-image: linear-gradient(25deg, $colour-primary, $colour-secondary);
+
+    padding: 1rem;
+    border-radius: 2rem;
+    color: white;
+    margin-top: 1rem;
+
+    &:hover{
+        transition: background-image 1s;
+        box-shadow: 0px 4px 15px 0px #00000059;
+        background-image: linear-gradient(25deg, lighten($colour-primary, 5%), lighten($colour-secondary, 5%));
+    }
+}
+    
