@@ -22,7 +22,9 @@ li i{
 .fa-solid.fa-heart:hover {
     background: linear-gradient(25deg, $colour-primary, $colour-secondary);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    color: transparent;
 }
 
 /*MENU HEADER*/
