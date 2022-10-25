@@ -32,6 +32,13 @@ body {
   margin: 0;
 }
 
+/*DESKTOP*/
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
 footer {
   display: flex;
   column-gap: 5rem;
@@ -105,12 +112,26 @@ footer {
 
 .container--RestaurantsArticles {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   row-gap: 2rem;
-  margin-bottom: 2rem;
+  column-gap: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
+@media screen and (min-width: 900px) {
+  .container--RestaurantsArticles {
+    margin-left: 10vw;
+    width: max-content;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container--RestaurantsArticles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .container--Loader {
   display: flex;
   justify-content: center;
@@ -133,6 +154,13 @@ footer {
   background-color: #F6F6F6;
 }
 
+/*DESKTOP*/
+@media screen and (min-width: 900px) {
+  .container--Menu {
+    width: 80vw;
+    align-self: center;
+  }
+}
 .container--Menu a {
   width: 30vw;
   align-self: center;
@@ -233,22 +261,33 @@ h3 {
   }
 }
 /*MENU*/
-.container--Menu-Heading {
-  justify-content: space-between;
-  padding: 0 3vw;
-}
 .container--Menu-Heading h2 {
   font-family: Shrikhand;
   font-weight: 500;
 }
 
+/*MOBILE*/
+@media screen and (max-width: 900px) {
+  .container--Menu-Heading {
+    justify-content: space-between;
+    padding: 0 3vw;
+  }
+}
+/*DESKTOP*/
+@media screen and (min-width: 900px) {
+  .container--Menu-Heading {
+    justify-content: center;
+    padding: 3vh 3vw;
+  }
+}
 .btn-PurpleHover {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 2rem;
   background-image: linear-gradient(25deg, #9356DC, #FF79DA);
-  padding: 1rem;
+  padding: 2vh 2vw;
   color: white;
   margin-top: 1rem;
+  max-width: 10vw;
 }
 .btn-PurpleHover:hover {
   transition: background-image 1s;
@@ -310,16 +349,27 @@ img {
 }
 
 .container--RestaurantsArticles article {
-  width: 80%;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 2rem;
   overflow: hidden;
 }
 
+/*DESKTOP*/
+@media screen and (min-width: 900px) {
+  .container--RestaurantsArticles article {
+    width: 25vw;
+  }
+}
+/*MOBILE*/
+@media screen and (max-width: 900px) {
+  .container--RestaurantsArticles article {
+    width: 80%;
+  }
+}
 article + a {
   display: flex;
   flex-direction: column;
-  max-height: 50vh;
+  max-height: 40vh;
 }
 
 .restaurants--Details {
@@ -371,13 +421,27 @@ li i {
   background-color: #99E2D0;
   border-radius: 0.3rem;
   position: absolute;
-  left: 67%;
   margin-top: 1.5rem;
   padding: 0.5rem 0.7rem;
   color: #1b6150;
   font-weight: 500;
 }
 
+/*DEKTOP*/
+@media screen and (min-width: 900px) {
+  .statusTag--FirstTag {
+    left: 27%;
+  }
+  .statusTag--SecondTag {
+    left: 54.5%;
+  }
+}
+/*MOBILE*/
+@media screen and (max-width: 900px) {
+  .restaurants--StatusTag {
+    left: 67%;
+  }
+}
 .loader--Spinner {
   width: 335px;
   height: 335px;

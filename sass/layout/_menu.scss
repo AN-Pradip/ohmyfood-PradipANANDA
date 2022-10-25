@@ -5,3 +5,11 @@
     border-radius: 2rem 2rem 0 0;
     background-color: $colour-lightGrey;
 }
+
+/*DESKTOP*/
+@media screen and (min-width: 900px) {
+    .container--Menu{
+        width: 80vw;
+        align-self: center;
+    }
+}

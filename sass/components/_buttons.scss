@@ -3,9 +3,10 @@
 
     background-image: linear-gradient(25deg, $colour-primary, $colour-secondary);
 
-    padding: 1rem;
+    padding: 2vh 2vw;
     color: white;
     margin-top: 1rem;
+    max-width: 10vw;
 
     &:hover{
         transition: background-image 1s;
