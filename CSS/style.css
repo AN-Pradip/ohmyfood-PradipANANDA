@@ -118,11 +118,15 @@ footer {
   margin-bottom: 3rem;
 }
 
+.container--Restaurants {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 900px) {
   .container--RestaurantsArticles {
     margin-left: 10vw;
     width: max-content;
-    overflow: hidden;
+    /*overflow: hidden;*/
   }
 }
 @media screen and (max-width: 900px) {
