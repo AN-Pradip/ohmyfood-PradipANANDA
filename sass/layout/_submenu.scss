@@ -1,0 +1,90 @@
+.container--Menu{
+    
+    a{
+        width: 30vw;
+        align-self: center;
+        text-align: center;
+        margin: 5vh 0;
+    }
+
+    .menu--Submenu-Starters, .menu--Submenu-MainCourses, .menu--Submenu-Deserts{
+        /*margin-bottom: 10rem;*/
+        margin: 0 5vw;
+
+        .submenu--Container-Article{
+            @include displayColumn;
+            align-items: center;
+            row-gap: 1rem;
+            margin-top: 1rem;
+    
+            article{
+                overflow: hidden;
+                display: flex;
+                background-color: white;
+                box-shadow: 0px 4px 10px 0px #00000040;
+                height: 5rem;
+                border-radius: 1rem;
+                width: 100%;
+                animation: slideup 1s forwards;
+
+                @keyframes slideup {
+                    0%{
+                        transform: translatey(2vh);
+                        opacity: 0%;
+                    }
+                    100%{
+                        transform: translatey(0px);
+                        opacity: 100%;
+                    }
+                }
+
+                .submenu--Article-Details{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 1rem;
+
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+
+                    .submenu--Article-DetailsText{
+                        h4{
+                            color: black;
+                            margin: 0.5rem 0;
+                            font-weight: 500;
+                            font-family: Roboto;
+                        }
+                        p{
+                            margin: 0;
+                            font-weight: 300;
+                        }
+                    }         
+                }
+
+                .popup{
+                    display: flex;
+                    flex-basis: 0%;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    white-space: nowrap;
+
+                    align-items: center;
+                    justify-content: center;
+                    transform: translateX(5vw);
+                    transition: all 700ms ease-in-out;
+                    width: 0rem;
+                    background-color: $colour-accent;
+                    
+                }
+                &:hover > .popup{
+                    transform: translateX(0);
+                    flex-basis: 15%;
+                }
+                &:hover > .submenu--Article-Details{
+                    flex-basis: 85%;
+                }
+            }
+        }
+    }
+}

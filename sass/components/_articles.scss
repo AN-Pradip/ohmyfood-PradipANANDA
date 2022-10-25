@@ -1,7 +1,9 @@
-article{
-    width: 80%;
-    @include shadowAndRoundedBorder;
-    overflow: hidden;
+.container--RestaurantsArticles{
+    article{
+        width: 80%;
+        @include shadowAndRoundedBorder;
+        overflow: hidden;
+    }
 }
 article + a{
     display: flex;
