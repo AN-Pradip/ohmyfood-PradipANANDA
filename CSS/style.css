@@ -1,0 +1,31 @@
+body {
+  font-family: Roboto;
+}
+
+h1, h4 {
+  font-family: Shrikhand;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*FOOTER*/
+.footer-link, h4 {
+  color: white;
+}
+
+h4 {
+  font-weight: 500;
+}
+
+/*LAYOUT*/
+header {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
