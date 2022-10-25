@@ -1,0 +1,9 @@
+footer{
+    display: flex;
+    flex-direction: column;
+
+    background-color: $colour-footer;
+
+    padding-left: 2rem;
+    row-gap: 1rem;
+}

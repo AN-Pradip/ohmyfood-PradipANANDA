@@ -11,7 +11,8 @@ a {
 }
 
 /*FOOTER*/
-.footer-link, h4 {
+footer a,
+h4 {
   color: white;
 }
 
@@ -26,6 +27,14 @@ header {
 
 body {
   margin: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  padding-left: 2rem;
+  row-gap: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
