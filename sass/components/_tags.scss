@@ -1,0 +1,10 @@
+.restaurants--StatusTag{
+    background-color: $colour-accent;
+    border-radius: 0.3rem;
+    position: absolute;
+    left: 67%;
+    margin-top: 1.5rem;
+    padding: 0.5rem 0.7rem;
+    color: darken($colour-accent, 50);
+    font-weight: 500;
+}

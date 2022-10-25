@@ -1,6 +1,6 @@
-.explore {
+.container-Explore {
     @include displayColumn;
     padding: 0 15%; 
     background-color: $colour-lightGrey;
-    padding-bottom: 10%;
+    padding-bottom: 2rem;
 }

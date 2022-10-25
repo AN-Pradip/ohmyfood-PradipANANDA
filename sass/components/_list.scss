@@ -1,0 +1,36 @@
+ol{
+    @include displayColumn;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    counter-reset: item;
+    li{
+        display: flex;
+        align-items: center;
+    
+        width: 80%;
+        column-gap: 1rem; 
+        @include shadowAndRoundedBorder;
+        counter-increment: item;
+        padding: 2rem;
+        background-color: $colour-lightGrey;
+        margin-bottom: 2rem;   
+    }
+    li:last-of-type{
+        background-color: lighten($colour-primary, 30%);
+    }
+    li::before{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -3rem;
+        content: counter(item);
+        color: white;
+        background-color: $colour-primary;
+        padding: 0.5rem 0.8rem;
+        border-radius: 2rem;
+    }
+}
+
+

@@ -1,6 +1,5 @@
 footer{
-    display: flex;
-    flex-direction: column;
+    @include displayColumn;
 
     background-color: $colour-footer;
 

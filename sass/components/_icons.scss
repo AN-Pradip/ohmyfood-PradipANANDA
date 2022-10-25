@@ -1,0 +1,22 @@
+/*TUTORIAL*/
+li i{
+    color: $colour-darkGrey;
+}
+.tutorial--StoreIcon{
+    color: $colour-primary;
+}
+
+/*RETAURANTS*/
+.fa-heart.fa-regular{
+    font-size:28px;
+    color: black;
+}
+.fa-solid.fa-heart{
+    font-size:30px;
+    color: transparent;
+}
+.fa-solid.fa-heart:hover {
+    background: linear-gradient(25deg, $colour-primary, $colour-secondary);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

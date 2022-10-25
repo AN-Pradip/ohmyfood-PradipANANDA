@@ -9,22 +9,27 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>ohmyfood</h1>
+        <div class="container--Loader">
+            <div class="loader--Spinner"></div>
+        </div>
+        <header class="container--TxtCenter">
+            <a href="" >
+                <h1>ohmyfood</h1>
+            </a>
         </header>
 
-        <div class="divFlexCenter location">
+        <div class="container--FlexAlignCenter container--JustifyCenter container-Location">
             <i class="fa-solid fa-location-dot"></i>
             <h3>Paris, Belleville</h3>
         </div>
 
-        <div class="divFlexCenter divTxtCenter explore">
+        <div class="container--FlexAlignCenter container--JustifyCenter container--TxtCenter container-Explore">
             <h2>Reservez le menu qui vous convient</h2>
             <span> Decouvrez des restaurants d'exception, selectiones par nos soins</span>
-            <a href="" class="purpleButton"> Explorer nos restaurants </a>
+            <a href="" class="btn-PurpleHover"> Explorer nos restaurants </a>
         </div>
 
-        <div class="tutorial">
+        <div class="container--Tutorial">
             <h2>Fonctionnement</h2>
             <ol>
                 <li>
@@ -36,7 +41,7 @@
                     Composez votre menu
                 </li>
                 <li>
-                    <i class="fa-solid fa-store tutorial-storeIcon"></i>
+                    <i class="fa-solid fa-store tutorial--StoreIcon"></i>
                     Dégustez au restaurant
                 </li>
             </ol>
@@ -46,63 +51,67 @@
             <div>
                 <h2>Restaurants</h2>
             </div>
-            <div>
+            <div class="container--RestaurantsArticles">
                 <article>
                     <a href="">
-                        <img src="" alt="">
-                        <span>Nouveau</span>
-                        <div>
+                        <img src="images/restaurants/testImage.jpg" alt="">
+                        <span class="restaurants--StatusTag">Nouveau</span>
+                        <div class="restaurants--Details">
                             <div>
                                 <h3>La palette du gout</h3>
                                 <span>Menilmontant</span>
                             </div>
-                            <div>
-                                <i class="fa-light fa-heart"></i>
+                            <div class="fa-stack">
+                                <i class="fa-regular fa-heart fa-stack-1x"></i>
+                                <i class="fa-solid fa-heart fa-stack-1x"></i>
                             </div>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="">
-                        <img src="" alt="">
-                        <span>Nouveau</span>
-                        <div>
+                        <img src="images/restaurants/testImage.jpg" alt="">
+                        <span class="restaurants--StatusTag">Nouveau</span>
+                        <div class="restaurants--Details">
                             <div>
                                 <h3>La note enchantee</h3>
                                 <span>Charonne</span>
                             </div>
-                            <div>
-                                <i class="fa-light fa-heart"></i>
+                            <div class="fa-stack">
+                                <i class="fa-regular fa-heart fa-stack-1x"></i>
+                                <i class="fa-solid fa-heart fa-stack-1x"></i>
                             </div>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="">
-                        <img src="" alt="">
-                        <span>Nouveau</span>
-                        <div>
+                        <img src="images/restaurants/testImage.jpg" alt="">
+                        <span class="restaurants--StatusTag">Nouveau</span>
+                        <div class="restaurants--Details">
                             <div>
                                 <h3>A la francaise</h3>
                                 <span>Cite Rouget</span>
                             </div>
-                            <div>
-                                <i class="fa-light fa-heart"></i>
+                            <div class="fa-stack">
+                                <i class="fa-regular fa-heart fa-stack-1x"></i>
+                                <i class="fa-solid fa-heart fa-stack-1x"></i>
                             </div>
                         </div>
                     </a>
                 </article>
                 <article>
                     <a href="">
-                        <img src="" alt="">
-                        <span>Nouveau</span>
-                        <div>
+                        <img src="images/restaurants/testImage.jpg" alt="">
+                        <span class="restaurants--StatusTag">Nouveau</span>
+                        <div class="restaurants--Details">
                             <div>
                                 <h3>Le delice des sens</h3>
                                 <span>Folie-Mericourt</span>
                             </div>
-                            <div>
-                                <i class="fa-light fa-heart"></i>
+                            <div class="fa-stack">
+                                <i class="fa-regular fa-heart fa-stack-1x"></i>
+                                <i class="fa-solid fa-heart fa-stack-1x"></i>
                             </div>
                         </div>
                     </a>
@@ -123,7 +132,7 @@
             <a href="">
                 Mentions legales
             </a>
-            <a href="">
+            <a href="mailto:contact@ohmyfood.com">
                 Contact
             </a>
         </footer>

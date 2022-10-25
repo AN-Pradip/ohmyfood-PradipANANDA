@@ -3,14 +3,21 @@
 @import "./base/typography.scss";
 
 /*LAYOUT*/
-@import "./layout/header.scss";
 @import "./layout/body.scss";
 @import "./layout/footer.scss";
-@import "./layout/divLayout.scss";
+@import "./layout/containerLayout.scss";
 @import "./layout/location.scss";
 @import "./layout/explore.scss";
 @import "./layout/tutorial.scss";
+@import "./layout/restaurants.scss";
+@import "./layout/loader.scss";
 
 /*COMPONENTS*/
+@import "./components/headings.scss";
 @import "./components/buttons.scss";
-@import "./components/tutorialComponents.scss";
+@import "./components/list.scss";
+@import "./components/img.scss";
+@import "./components/articles.scss";
+@import "./components/icons.scss";
+@import "./components/tags.scss";
+@import "./components/spinner.scss";

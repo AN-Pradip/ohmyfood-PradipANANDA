@@ -1,0 +1,17 @@
+article{
+    width: 80%;
+    @include shadowAndRoundedBorder;
+    overflow: hidden;
+}
+article + a{
+    display: flex;
+    flex-direction: column;
+    max-height: 50vh;   
+}
+.restaurants--Details{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: -2% 5% 1rem 5%;
+}
