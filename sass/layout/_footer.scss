@@ -1,9 +1,30 @@
 footer{
-    @include displayColumn;
+    display: flex;
+    
+    column-gap: 5rem;
+    padding-right: 10rem;
 
     background-color: $colour-footer;
 
     padding-left: 2rem;
     row-gap: 1rem;
     padding-bottom: 1rem;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 900px) {
+    footer{
+        @include displayColumn;
+    }
+}
+
+/*DEKTOP*/
+@media screen and (min-width: 900px) {
+    footer{
+        align-items: center;
+        flex-direction: row-reverse;
+        a{
+            @include FooterReverseElementOrder;
+        }
+    }
 }

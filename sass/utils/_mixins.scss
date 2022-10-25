@@ -6,3 +6,13 @@
     box-shadow: 0px 4px 10px 0px #00000040;
     border-radius: 2rem;
 }
+
+@mixin FooterReverseElementOrder {
+    $orderCount : 3;
+    @for $i from 1 through 3{
+        &:nth-of-type(#{$i}){
+            order: $orderCount;
+        }
+        $orderCount: $orderCount - 1;
+    }
+}
