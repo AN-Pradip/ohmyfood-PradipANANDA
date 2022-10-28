@@ -19,10 +19,14 @@ li i{
     font-size:30px;
     color: transparent;
 }
+.fa-stack{
+    >span{
+        display: inline;
+    }
+}
 .fa-solid.fa-heart:hover {
     background: linear-gradient(25deg, $colour-primary, $colour-secondary);
-    webkit-background-clip: text;
-    color: transparent;
+    -webkit-background-clip: content-box;
 }
 
 /*MENU HEADER*/
