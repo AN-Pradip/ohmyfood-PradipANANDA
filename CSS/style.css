@@ -421,7 +421,7 @@ li i {
 
 .fa-solid.fa-heart:hover {
   background: linear-gradient(25deg, #9356DC, #FF79DA);
-  -webkit-background-clip: content-box;
+  -webkit-background-clip: text;
 }
 
 /*MENU HEADER*/
