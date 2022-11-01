@@ -16,4 +16,9 @@
 .btn-Explore{
     padding: 2vh 2vw;
 }
-    
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+    .btn-PurpleHover {
+        padding: 2vh 2vw;
+    }
+}

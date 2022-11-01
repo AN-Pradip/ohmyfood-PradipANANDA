@@ -32,7 +32,7 @@ body {
   margin: 0;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   body {
     display: flex;
@@ -50,9 +50,10 @@ footer {
   padding-bottom: 1rem;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   footer {
+    padding-right: 5%;
     align-items: center;
     flex-direction: row-reverse;
   }
@@ -93,7 +94,7 @@ footer {
   padding-bottom: 2rem;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .container-Explore {
     row-gap: 1rem;
@@ -112,19 +113,25 @@ footer {
   column-gap: 2rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
+  width: 85%;
+  align-self: center;
 }
 
 .container--Restaurants {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .container--RestaurantsArticles {
     flex-direction: row;
     margin-left: 10vw;
     width: max-content;
     overflow: hidden;
+    align-self: auto;
   }
 }
 .container--Loader {
@@ -149,7 +156,7 @@ footer {
   background-color: #F6F6F6;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .container--Menu {
     width: 80vw;
@@ -245,7 +252,7 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .container-Explore h2 {
     font-size: 3rem;
@@ -264,7 +271,7 @@ h3 {
   font-weight: 500;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .container--Menu-Heading {
     justify-content: center;
@@ -289,6 +296,12 @@ h3 {
   padding: 2vh 2vw;
 }
 
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  .btn-PurpleHover {
+    padding: 2vh 2vw;
+  }
+}
 ol {
   display: flex;
   flex-direction: column;
@@ -327,7 +340,7 @@ ol li::before {
   border-radius: 2rem;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   ol {
     flex-direction: row;
@@ -353,10 +366,11 @@ a > img {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 2rem;
   overflow: hidden;
-  width: 80%;
+  width: 95%;
+  background-color: white;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .container--RestaurantsArticles article {
     width: 25vw;
@@ -383,7 +397,7 @@ li i {
   color: white;
 }
 
-/*RETAURANTS*/
+/*RESTAURANTS*/
 .fa-heart.fa-regular {
   font-size: 28px;
   color: black;
@@ -421,16 +435,16 @@ li i {
   padding: 0.5rem 0.7rem;
   color: #1b6150;
   font-weight: 500;
-  left: 67%;
+  right: 15vw;
 }
 
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .statusTag--FirstTag {
-    left: 27%;
+    right: 68vw;
   }
   .statusTag--SecondTag {
-    left: 54.5%;
+    right: 40vw;
   }
 }
 .loader--Spinner {
@@ -473,6 +487,57 @@ li i {
   width: 3rem;
   height: 0.25rem;
   background-color: #99E2D0;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  counter-reset: item;
+  width: 80%;
+  align-self: center;
+}
+ol li {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 2rem;
+  counter-increment: item;
+  padding: 1.5rem;
+  background-color: #F6F6F6;
+  margin-bottom: 2rem;
+  width: 80%;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+ol li i {
+  color: #7E7E7E;
+  margin-left: -3.5rem;
+}
+ol li .tutorial-storeIcon {
+  color: #9356DC;
+}
+ol li:last-of-type {
+  background-color: #e4d5f6;
+}
+ol li::before {
+  content: counter(item);
+  color: white;
+  background-color: #9356DC;
+  padding: 0.5rem 0.8rem;
+  border-radius: 2rem;
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  ol {
+    flex-direction: row;
+  }
+}
+/*TABLET AND DESKTOP*/
+@media screen and (min-width: 768px) {
+  ol li {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

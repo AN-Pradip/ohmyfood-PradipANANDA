@@ -2,11 +2,12 @@
     article{
         @include shadowAndRoundedBorder;
         overflow: hidden;
-        width: 80%;
+        width: 95%;
+        background-color: white;
     }
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
     .container--RestaurantsArticles{
         article{

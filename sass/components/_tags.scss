@@ -6,15 +6,15 @@
     padding: 0.5rem 0.7rem;
     color: darken($colour-accent, 50);
     font-weight: 500;
-    left: 67%;
+    right:15vw;
 }
 
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
     .statusTag--FirstTag{
-        left: 27%;
+        right: 68vw;
     }
     .statusTag--SecondTag{
-        left: 54.5%;
+        right: 40vw;
     }
 }

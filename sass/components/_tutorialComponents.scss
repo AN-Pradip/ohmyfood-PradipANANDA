@@ -1,28 +1,51 @@
 ol{
+    @include displayColumn;
     list-style: none;
     padding: 0;
     counter-reset: item;
+
+    width: 80%;
+    align-self: center;
+    li{
+        @include shadowAndRoundedBorder;
+        counter-increment: item;
+        padding:1.5rem;
+        background-color: $colour-lightGrey;
+        margin-bottom: 2rem;
+        width: 80%;
+        white-space: nowrap;
+        margin-left: 1rem;
+        i{
+            color: $colour-darkGrey;
+            margin-left: -3.5rem;
+        }
+        .tutorial-storeIcon{
+            color: $colour-primary;
+        }
+    }
+    li:last-of-type{
+        background-color: lighten($colour-primary, 30%);
+    }
+    li::before{
+        content: counter(item);
+        color: white;
+        background-color: $colour-primary;
+        padding: 0.5rem 0.8rem;
+        border-radius: 2rem;
+    }
 }
-li{
-    @include shadowAndRoundedBorder;
-    counter-increment: item;
-    padding: 2rem;
-    background-color: $colour-lightGrey;
-    margin-bottom: 2rem;
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+    ol{
+        flex-direction: row;
+    }
 }
-li i{
-    color: $colour-darkGrey;
-}
-.tutorial-storeIcon{
-    color: $colour-primary;
-}
-li:last-of-type{
-    background-color: lighten($colour-primary, 30%);
-}
-li::before{
-    content: counter(item);
-    color: white;
-    background-color: $colour-primary;
-    padding: 0.5rem 0.8rem;
-    border-radius: 2rem;
+/*TABLET AND DESKTOP*/
+@media screen and (min-width: 768px) {
+    ol{
+        li{
+            width: 90%;
+        }
+    }
 }

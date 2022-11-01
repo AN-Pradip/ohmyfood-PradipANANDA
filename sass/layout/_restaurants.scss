@@ -5,18 +5,23 @@
     column-gap: 2rem;
     padding-bottom: 1rem;
     margin-bottom: 3rem;
+    width: 85%;
+    align-self: center;
 }
 .container--Restaurants{
     overflow: hidden;
+    @include displayColumn;
+    background-color: $colour-lightGrey;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
     .container--RestaurantsArticles{
         flex-direction: row;
         margin-left: 10vw;
         width:max-content;
         overflow: hidden;
+        align-self: auto;
     }
     
 }
