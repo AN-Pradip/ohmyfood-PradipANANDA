@@ -33,7 +33,7 @@ body {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   body {
     display: flex;
     flex-direction: column;
@@ -51,7 +51,7 @@ footer {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   footer {
     align-items: center;
     flex-direction: row-reverse;
@@ -94,7 +94,7 @@ footer {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container-Explore {
     row-gap: 1rem;
   }
@@ -119,7 +119,7 @@ footer {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container--RestaurantsArticles {
     flex-direction: row;
     margin-left: 10vw;
@@ -150,7 +150,7 @@ footer {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container--Menu {
     width: 80vw;
     align-self: center;
@@ -246,7 +246,7 @@ h3 {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container-Explore h2 {
     font-size: 3rem;
   }
@@ -265,7 +265,7 @@ h3 {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container--Menu-Heading {
     justify-content: center;
     padding: 3vh 3vw;
@@ -325,7 +325,7 @@ ol li::before {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   ol {
     flex-direction: row;
   }
@@ -354,7 +354,7 @@ a > img {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .container--RestaurantsArticles article {
     width: 25vw;
   }
@@ -428,7 +428,7 @@ li i {
 }
 
 /*DESKTOP AND TABLET*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .statusTag--FirstTag {
     left: 27%;
   }
