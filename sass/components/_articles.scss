@@ -2,28 +2,18 @@
     article{
         @include shadowAndRoundedBorder;
         overflow: hidden;
+        width: 80%;
     }
 }
 
-/*DESKTOP*/
-@media screen and (min-width: 900px) {
+/*DESKTOP AND TABLET*/
+@media screen and (min-width: 768px) {
     .container--RestaurantsArticles{
         article{
             width: 25vw;
         }
     }
 }    
-
-/*MOBILE*/
-@media screen and (max-width: 900px) {
-    .container--RestaurantsArticles{
-        article{
-            width: 80%;
-        }
-    }
-}
-
-
 
 article + a{
     display: flex;

@@ -6,21 +6,15 @@
     padding: 0.5rem 0.7rem;
     color: darken($colour-accent, 50);
     font-weight: 500;
+    left: 67%;
 }
 
-/*DEKTOP*/
-@media screen and (min-width: 900px) {
+/*DESKTOP AND TABLET*/
+@media screen and (min-width: 768px) {
     .statusTag--FirstTag{
         left: 27%;
     }
     .statusTag--SecondTag{
         left: 54.5%;
-    }
-}
-
-/*MOBILE*/
-@media screen and (max-width: 900px) {
-    .restaurants--StatusTag{
-        left: 67%;
     }
 }

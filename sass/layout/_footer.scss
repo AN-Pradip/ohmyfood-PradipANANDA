@@ -1,5 +1,5 @@
 footer{
-    display: flex;
+    @include displayColumn;
     
     column-gap: 5rem;
     padding-right: 10rem;
@@ -11,15 +11,8 @@ footer{
     padding-bottom: 1rem;
 }
 
-/*MOBILE*/
-@media screen and (max-width: 900px) {
-    footer{
-        @include displayColumn;
-    }
-}
-
-/*DEKTOP*/
-@media screen and (min-width: 900px) {
+/*DESKTOP AND TABLET*/
+@media screen and (min-width: 768px) {
     footer{
         align-items: center;
         flex-direction: row-reverse;

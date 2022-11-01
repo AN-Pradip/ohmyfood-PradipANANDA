@@ -1,5 +1,6 @@
 .container--RestaurantsArticles{
-    display: flex;
+    @include displayColumn;
+    align-items: center;
     row-gap: 2rem;
     column-gap: 2rem;
     padding-bottom: 1rem;
@@ -9,18 +10,13 @@
     overflow: hidden;
 }
 
-@media screen and (min-width: 900px) {
+/*DESKTOP AND TABLET*/
+@media screen and (min-width: 768px) {
     .container--RestaurantsArticles{
+        flex-direction: row;
         margin-left: 10vw;
         width:max-content;
         overflow: hidden;
     }
     
-}
-
-@media screen and (max-width: 900px) {
-    .container--RestaurantsArticles{
-        @include displayColumn;
-        align-items: center;
-    }
 }

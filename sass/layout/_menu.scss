@@ -6,8 +6,8 @@
     background-color: $colour-lightGrey;
 }
 
-/*DESKTOP*/
-@media screen and (min-width: 900px) {
+/*DESKTOP AND TABLET*/
+@media screen and (min-width: 768px) {
     .container--Menu{
         width: 80vw;
         align-self: center;
