@@ -157,10 +157,10 @@ footer {
   }
 }
 .container--Menu a {
-  width: 30vw;
+  /*width: 30vw;*/
   align-self: center;
   text-align: center;
-  margin: 5vh 0;
+  margin: 2vh 0;
 }
 .container--Menu .menu--Submenu-Starters, .container--Menu .menu--Submenu-MainCourses, .container--Menu .menu--Submenu-Deserts {
   margin: 0 5vw;
@@ -275,15 +275,18 @@ h3 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 2rem;
   background-image: linear-gradient(25deg, #9356DC, #FF79DA);
-  padding: 2vh 2vw;
+  padding: 1vh 2vw;
   color: white;
   margin-top: 1rem;
-  max-width: 10vw;
 }
 .btn-PurpleHover:hover {
   transition: background-image 1s;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
   background-image: linear-gradient(25deg, #a16be0, #ff93e1);
+}
+
+.btn-Explore {
+  padding: 2vh 2vw;
 }
 
 ol {
@@ -359,12 +362,6 @@ a > img {
     width: 25vw;
   }
 }
-article + a {
-  display: flex;
-  flex-direction: column;
-  max-height: 40vh;
-}
-
 .restaurants--Details {
   display: flex;
   align-content: center;
@@ -427,7 +424,7 @@ li i {
   left: 67%;
 }
 
-/*DESKTOP AND TABLET*/
+/*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .statusTag--FirstTag {
     left: 27%;
