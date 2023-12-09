@@ -4,7 +4,7 @@ img{
 }
 .container--Menu-Image{
    >img{
-      height: 40vh;
+      height: 20vh;
    }
 }
 a{
@@ -12,3 +12,12 @@ a{
       max-height: 20vh;
    }
 }
+
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+   .container--Menu-Image{
+      >img{
+         height: 40vh;
+      }
+   }
+}   

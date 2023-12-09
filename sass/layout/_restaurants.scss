@@ -17,9 +17,13 @@
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
     .container--RestaurantsArticles{
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 85vw;
+        //flex-direction: row;
         margin-left: 10vw;
-        width:max-content;
+        //width:max-content;
         overflow: hidden;
         align-self: auto;
     }

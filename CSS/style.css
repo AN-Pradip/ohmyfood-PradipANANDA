@@ -127,9 +127,11 @@ footer {
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .container--RestaurantsArticles {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 85vw;
     margin-left: 10vw;
-    width: max-content;
     overflow: hidden;
     align-self: auto;
   }
@@ -355,13 +357,19 @@ img {
 }
 
 .container--Menu-Image > img {
-  height: 40vh;
+  height: 20vh;
 }
 
 a > img {
   max-height: 20vh;
 }
 
+/*DESKTOP*/
+@media screen and (min-width: 1024px) {
+  .container--Menu-Image > img {
+    height: 40vh;
+  }
+}
 .container--RestaurantsArticles article {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 2rem;
@@ -373,7 +381,7 @@ a > img {
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .container--RestaurantsArticles article {
-    width: 25vw;
+    width: 35vw;
   }
 }
 .restaurants--Details {
@@ -441,10 +449,10 @@ li i {
 /*DESKTOP*/
 @media screen and (min-width: 1024px) {
   .statusTag--FirstTag {
-    right: 68vw;
+    right: 55vw;
   }
   .statusTag--SecondTag {
-    right: 40vw;
+    right: 12vw;
   }
 }
 .loader--Spinner {
